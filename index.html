@@ -4,44 +4,45 @@
 	<meta charset="utf-8" />
 	<title>Captain Rogers</title>
 	<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=0;">
 	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=0;">
 	<meta name="description" content="Captain Rogers is a simple, yet very engaging HTML5 mobile game about brave Captain Rogers and his escape through an asteroid field." />
 	<style type="text/css">
 		html,body {
 			background-color: #000;
-			color: #fff;
-			font-family: helvetica, arial, sans-serif;
 			margin: 0;
 			padding: 0;
-			font-size: 12pt;
-		}
-		#canvas {
-			position: absolute;
-			left: 0;
-			right: 0;
-			top: 0;
-			bottom: 0;
-			margin: auto;
-		}
-		#rotate {
-			position: absolute;
-			left: 0;
-			right: 0;
-			top: 0;
-			bottom: 0;
-			margin: auto;
+			width: 100%;
 			height: 100%;
+			overflow: hidden;
+		}
+		#game {
+			transform-origin: 0 0;
+			-webkit-transform-origin: 0 0;
+			user-select: none;
+			-webkit-user-select: none;
+		}
+		#portrait {
 			display: none;
-			z-index: 1;
-			background: url(media/img/screen-rotate.png) no-repeat;
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
 		}
 	</style>
 	<script type="text/javascript" src="game.min.js"></script>
 </head>
-<body onload="setTimeout(function(){window.scrollTo(0,0);},1);">
-	<canvas id="canvas"></canvas>
-	<div id="rotate"></div>
+<body>
+	<div id="game">
+		<canvas width="480" height="320" id="canvas"></canvas>
+	</div>
+	<img src="media/img/screen-rotate.png" id="portrait" />
 </body>
 </html>
