@@ -4,6 +4,7 @@
 	<meta charset="utf-8" />
 	<title>Captain Rogers</title>
 	<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1; user-scalable=0;">
 	<meta name="description" content="Captain Rogers is a simple, yet very engaging HTML5 mobile game about brave Captain Rogers and his escape through an asteroid field." />
@@ -22,8 +23,11 @@
 			user-select: none;
 			-webkit-user-select: none;
 		}
-		#portrait {
+		#portrait { 
 			display: none;
+		}
+		#portrait,
+		#portrait img {
 			width: 100%;
 			height: 100%;
 			margin: 0;
@@ -41,8 +45,16 @@
 </head>
 <body>
 	<div id="game">
-		<canvas width="480" height="320" id="canvas"></canvas>
+		<canvas width="480" height="320" id="canvas" moz-opaque></canvas>
 	</div>
-	<img src="media/img/screen-rotate.png" id="portrait" />
+	<p id="portrait"><img src="media/game-rogers-square.png" alt="Captain Rogers" /></p>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-30485283-4', 'enclavegames.com');
+	  ga('send', 'pageview');
+	</script>
 </body>
 </html>
