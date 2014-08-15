@@ -1,5 +1,5 @@
 {
-    "version": "1.3.1",
+    "version": "1.3.2",
     "name": "Captain Rogers",
     "description": "It's simple, yet very engaging game about brave Captain Rogers and his escape through an asteroid field. Tap the screen to fly up, release to fly down. Collect the stars and shields, avoid asteroids and mines. Grab the bomb to blow up everything on screen!",
     "launch_path": "/index.html",
@@ -45,6 +45,14 @@
         "de": {
             "name": "Captain Rogers",
             "description": "Ein simples, aber fesselndes Spiel über den mutigen Captain Rogers und seine Flucht durch ein Asteroidenfeld. Berühre den Bildschirm um hoch oder runter zu fliegen. Sammle Sterne und Schilde, weiche Asteroiden und Minen aus. Ergatter Bomben um alle Hindernisse auf dem Bildschirm zu sprengen!"
+        },
+        "ja": {
+            "name": "キャプテン・ロジャース",
+            "description": "勇敢なキャプテン・ロジャースと彼の小惑星の戦場からの脱出に関するシンプルでありながら、とても魅力的なゲームです。飛び上がるには画面をタップ、飛び下がるにはリリース。星と盾をコレクト（収集）して、小惑星や地雷を避けろ。画面上のすべてを爆破するために爆弾を掴め！"
+        },
+        "cs": {
+            "name": "Kapitán Rogers",
+            "description": "Je to jednoduchá, přesto velmi podmanivá hra o Kapitánu Rogersovi a jeho úniku skrz pole asteroidů. Klepnutím na obrazovku leťte nahoru, uvolněním leťte dolů. Sbírejte hvězdy a štíty, vyhýbejte se asteroidům a minám. Chyťte bombu a vyhoďte do povětří všechno, co je na obrazovce!"
         }
     },
     "orientation": "landscape"
